@@ -23,7 +23,7 @@ const ProductPage = () => {
       "Roasted in small batches",
       "Best brewed within 2 weeks of opening",
     ],
-    images: ["/prod1.png", "/prod2.png", "/prod3.png", "/prod4.png"],
+    images: ["./prod1.png", "./prod2.png", "./prod3.png", "./prod4.png"],
   };
 
   const renderStars = (rating) => {

@@ -7,19 +7,19 @@ const Carousel = () => {
       id: 1,
       title: "Healthy Food Available to Everyone.",
       link: "/shop-catalog",
-      imageUrl: "/hero-img1.jpg",
+      imageUrl: "./hero-img1.jpg",
     },
     {
       id: 2,
       title: "Enjoy Refreshing Summer Drinks.",
       link: "/shop-catalog",
-      imageUrl: "/hero-img2.jpg",
+      imageUrl: "./hero-img2.jpg",
     },
     {
       id: 3,
       title: "Organic Eggs from home-grown chicken.",
       link: "/shop-catalog",
-      imageUrl: "/hero-img3.jpg",
+      imageUrl: "./hero-img3.jpg",
     },
   ]);
 

@@ -7,28 +7,28 @@ const CartOffcanvas = () => {
       name: "Muesli Fitness Energy, gluten free..",
       price: 18.7,
       quantity: 1,
-      image: "/prod1.png",
+      image: "./prod1.png",
     },
     {
       id: 2,
       name: "Fresh orange Klementina Span",
       price: 12.17,
       quantity: 1,
-      image: "/prod2.png",
+      image: "./prod2.png",
     },
     {
       id: 3,
       name: "Pepsi Soda classic, Can",
       price: 15.29,
       quantity: 1,
-      image: "/prod3.png",
+      image: "./prod3.png",
     },
     {
       id: 4,
       name: "Pesto sauce with parmesan and basil",
       price: 29.12,
       quantity: 1,
-      image: "/prod4.png",
+      image: "./prod4.png",
     },
   ]);
 

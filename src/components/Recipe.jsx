@@ -4,21 +4,21 @@ import { Link } from "react-router-dom";
 const Recipe = () => {
   const [recipe] = useState([
     {
-      imgUrl: "/receipe-img1.jpg",
+      imgUrl: "./receipe-img1.jpg",
       title: "Rasberry fresh lemonade with lemon, strawberry syrup and mint.",
       time: "20 min",
       toughness: "Easy",
       like: "Like",
     },
     {
-      imgUrl: "/receipe-img2.jpg",
+      imgUrl: "./receipe-img2.jpg",
       title: "Penne Pasta with spinach and zucchini in a creamy sauce.",
       time: "30 min",
       toughness: "Hard",
       like: "Like",
     },
     {
-      imgUrl: "/receipe-img3.jpg",
+      imgUrl: "./receipe-img3.jpg",
       title: "Garden Salad with a mixture of lettuce, cucumber and tomatoes.",
       time: "20 min",
       toughness: "Easy",
@@ -28,7 +28,7 @@ const Recipe = () => {
 
   const [recipeBook] = useState([
     {
-      imgUrl: "/receipe-img4.jpg",
+      imgUrl: "./receipe-img4.jpg",
       bookName: "Cookbook",
       title: "The Best in Gastromony",
       author: "Dana Chambers",

@@ -8,21 +8,21 @@ const ProductCard = () => {
       totaleProducts: "125 products",
       title: "Only fresh fish to your table",
       link: "/shop-catalog",
-      imageUrl: "/product-img1.png",
+      imageUrl: "./product-img1.png",
     },
     {
       id: 2,
       totaleProducts: "50 products",
       title: "Products for Easter table",
       link: "/shop-catalog",
-      imageUrl: "/product-img2.png",
+      imageUrl: "./product-img2.png",
     },
     {
       id: 3,
       totaleProducts: "35 products",
       title: "Berries from the garden",
       link: "/shop-catalog",
-      imageUrl: "/product-img3.png",
+      imageUrl: "./product-img3.png",
     },
   ]);
 
