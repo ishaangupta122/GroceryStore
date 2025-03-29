@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import ShopCatalog from "./pages/ShopCatalog";
@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <Router>
       <ScrollToTop />
       <Navbar />
       <Routes>
@@ -20,7 +20,7 @@ function App() {
         <Route path='/product-card' element={<ProductPage />} />
       </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 
