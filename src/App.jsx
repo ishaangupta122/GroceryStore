@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import ShopCatalog from "./pages/ShopCatalog";
@@ -14,10 +14,10 @@ function App() {
       <ScrollToTop />
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/shop-catalog" element={<ShopCatalog />} />
-        <Route path="/product-card" element={<ProductPage />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/shop-catalog' element={<ShopCatalog />} />
+        <Route path='/product-card' element={<ProductPage />} />
       </Routes>
       <Footer />
     </>

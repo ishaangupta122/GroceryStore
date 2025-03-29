@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import { useState } from "react";
 import ProductCard from "../components/ProductCard";
 
 const ProductPage = () => {
@@ -25,12 +23,7 @@ const ProductPage = () => {
       "Roasted in small batches",
       "Best brewed within 2 weeks of opening",
     ],
-    images: [
-      "./src/assets/prod1.png",
-      "./src/assets/prod2.png",
-      "./src/assets/prod3.png",
-      "./src/assets/prod4.png",
-    ],
+    images: ["/prod1.png", "/prod2.png", "/prod3.png", "/prod4.png"],
   };
 
   const renderStars = (rating) => {
@@ -42,8 +35,7 @@ const ProductPage = () => {
           style={{
             color: i <= Math.floor(rating) ? "#FFA41C" : "#E7E7E7",
             fontSize: "20px",
-          }}
-        >
+          }}>
           ★
         </span>
       );
@@ -61,16 +53,14 @@ const ProductPage = () => {
         borderRadius: "8px",
         backgroundColor: "#fff",
         height: "100%",
-      }}
-    >
+      }}>
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           gap: "10px",
           width: "15%",
-        }}
-      >
+        }}>
         {product.images.map((img, index) => (
           <img
             key={index}
@@ -96,8 +86,7 @@ const ProductPage = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-        }}
-      >
+        }}>
         <img
           src={product.images[mainImage]}
           alt={product.name}
@@ -120,8 +109,7 @@ const ProductPage = () => {
           margin: "50px auto 100px auto",
           padding: "20px",
           fontFamily: "Arial, sans-serif",
-        }}
-      >
+        }}>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
           {/* Left column: Images */}
           <div style={{ flex: "1 1 500px" }}>
@@ -135,8 +123,7 @@ const ProductPage = () => {
                 fontSize: "24px",
                 fontWeight: "bold",
                 marginBottom: "10px",
-              }}
-            >
+              }}>
               {product.name}
             </h1>
             <p
@@ -144,8 +131,7 @@ const ProductPage = () => {
                 fontSize: "14px",
                 color: "#0066c0",
                 marginBottom: "10px",
-              }}
-            >
+              }}>
               by {product.brand}
             </p>
             <div
@@ -153,16 +139,14 @@ const ProductPage = () => {
                 display: "flex",
                 alignItems: "center",
                 marginBottom: "10px",
-              }}
-            >
+              }}>
               {renderStars(product.rating)}
               <span
                 style={{
                   marginLeft: "10px",
                   fontSize: "14px",
                   color: "#0066c0",
-                }}
-              >
+                }}>
                 {product.reviewCount} ratings
               </span>
             </div>
@@ -172,15 +156,13 @@ const ProductPage = () => {
                 borderBottom: "1px solid #e7e7e7",
                 padding: "10px 0",
                 marginBottom: "10px",
-              }}
-            >
+              }}>
               <p
                 style={{
                   fontSize: "28px",
                   fontWeight: "bold",
                   color: "#B12704",
-                }}
-              >
+                }}>
                 ${product.price.toFixed(2)}
               </p>
               <p
@@ -188,8 +170,7 @@ const ProductPage = () => {
                   fontSize: "14px",
                   textDecoration: "line-through",
                   color: "#565959",
-                }}
-              >
+                }}>
                 List Price: ${product.originalPrice.toFixed(2)}
               </p>
             </div>
@@ -202,25 +183,22 @@ const ProductPage = () => {
 
                 padding: "14px",
                 marginTop: "20px",
-              }}
-            >
+              }}>
               <div style={{ marginBottom: "10px" }}>
                 <label
-                  htmlFor="quantity"
-                  style={{ marginRight: "10px", fontSize: "14px" }}
-                >
+                  htmlFor='quantity'
+                  style={{ marginRight: "10px", fontSize: "14px" }}>
                   Qty:
                 </label>
                 <select
-                  id="quantity"
+                  id='quantity'
                   value={quantity}
                   onChange={(e) => setQuantity(parseInt(e.target.value))}
                   style={{
                     padding: "5px",
                     borderRadius: "4px",
                     border: "1px solid #D5D9D9",
-                  }}
-                >
+                  }}>
                   {[1, 2, 3, 4, 5].map((num) => (
                     <option key={num} value={num}>
                       {num}
@@ -235,8 +213,7 @@ const ProductPage = () => {
                   alignItems: "start",
                   gap: "10px",
                   marginTop: "20px",
-                }}
-              >
+                }}>
                 <button
                   style={{
                     width: "50%",
@@ -249,11 +226,10 @@ const ProductPage = () => {
                     fontSize: "14px",
                     fontWeight: "bold",
                   }}
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasCart"
-                  aria-controls="offcanvasCart"
-                >
+                  type='button'
+                  data-bs-toggle='offcanvas'
+                  data-bs-target='#offcanvasCart'
+                  aria-controls='offcanvasCart'>
                   Add to Cart
                 </button>
                 <button
@@ -265,8 +241,7 @@ const ProductPage = () => {
                     borderRadius: "20px",
                     cursor: "pointer",
                     fontSize: "14px",
-                  }}
-                >
+                  }}>
                   Add to Wish List
                 </button>
               </div>
@@ -276,16 +251,14 @@ const ProductPage = () => {
                 marginTop: "15px",
                 marginBottom: "10px",
                 fontSize: "14px",
-              }}
-            >
+              }}>
               {product.description}
             </p>
             <ul style={{ paddingLeft: "20px", marginBottom: "20px" }}>
               {product.features.map((feature, index) => (
                 <li
                   key={index}
-                  style={{ marginBottom: "5px", fontSize: "14px" }}
-                >
+                  style={{ marginBottom: "5px", fontSize: "14px" }}>
                   {feature}
                 </li>
               ))}
